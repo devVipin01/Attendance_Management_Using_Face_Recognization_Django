@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Vipin</title>
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+</head>
+
+<body style = "background-color:rgb(207, 237, 247)">
+    
+    <header>
+        <nav>
+            <div class="logo">GCET</div>
+            <ul class="nav__list">
+                
+                <li class="list__item"><a href="#about" class="nav__link">About </a></li>
+                <li class="list__item"><a href="#contact" class="nav__link">Contact </a></li>
+                <li class="list__item"><a href="{% url 'Attendence' %}" class="nav__link">Attendence</a></li>
+                <li class="list__item"><a href="{% url 'recognizer' %}" class="nav__link">Submit Attendence</a></li>
+                
+            </ul>
+            <div class="ham">
+                <div class="ham__btn"><i class="fa fa-navicon"></i></div>
+            </div>
+        </nav>
+    </header>
+    <div style = "background-color:rgb(110, 173, 245);text-align:center; clear:both">
+
+        <h1> Welcome to Attendance Management Project</h1>
+
+     </div>
+
+    <div class="main">
+        <div class="home" id="home">
+            
+             <img src="{% static 'Picture2.jpg' %}" alt="Main_Picture" style="width:40%">
+        
+        </div>
+        <p style="font-family: 'Courier New', Courier, monospace;">Attendance is defined as the action or state of going regularly to or being present at a place or event.
+            Attendance of every student is being maintained by schools and colleges. 
+            The manual attendance record system is inefficient and more time is required to record as well as calculate the attendance of each student.
+            Hence a system is needed which will solve the issue of manual attendance and that is  face recognition system using AI.
+        
+        </p>
+
+        <div style = "color:rgb(10, 105, 10)">
+        <h3>Project Aim</h3>
+          <ul>
+              <li>This Project helps teachers,they easily take Attendanceo of every student .</li>
+              <li>It's also helpful to student they do not need to scan finger prints on biometric .</li>
+              <li>Students do not need any physical representation .</li>
+              <li>We also can extract important and useful data .</li>
+          </ul>
+        </div>
+
+
+        
+        <div class="about" id="about">
+            <h1>
+                <div>About</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </h1>
+            I am very glad to welcome you to this Attendance Management using Face recognizer. 
+            This is my college project <a href = "https://galgotiacollege.edu/welcome-to-gcet" target = "_blank">Galgotias College of Engineering</a>
+            Department of Computer Science and Engineering
+            <h4>Supervisor:</h4> <p style="color: rgb(223, 28, 164);">Mr./JAVED MIYA</p>
+
+        </div>
+        <table >
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Roll</th>
+            </tr>
+            <tr>
+                <td>Vipin Kumar</td>
+                <td>20GCEBCS098</td>
+                <td>Backend:(Python, Django,OpenCV AI)</td>
+            </tr>
+            <tr>
+                <td>Abhishek Singh</td>
+                <td>20GCEBCS098</td>
+                <td>Front end : (HTML, CSS, Designing)</td>
+            </tr>
+        </table>
+        
+
+        <div class="contact" id="contact">
+            <h1>
+                <div>Contact</div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </h1>
+            <div class="contact__icons">
+                <div><a class="git" href="https://github.com/devVipin1"><i class="fa fa-github"></i></a></div>
+                <div><a class="mail" href="mailto: gangwar7540@gmail.com"><i class="fa fa-envelope"></i></a></i></div>
+                <div><a class="twitter" href="https://www.kaggle.com/vipin20"><i class="fa fa-twitter"></i></a></div>
+                <div><a class="insta" href="#"><i class="fa fa-instagram"></i></a></i></div>
+            </div>
+        </div>
+        <div class="card jumbotron">
+            <div class="card-body">
+                <h4 class="card-title text-info" style="text-decoration: underline;">Developer</h4>
+                <h5 class="card-subtitle mb-2 mt-4" style="color: rgb(223, 28, 164);">Vipin Kumar</5>
+                    <h6 class="card-subtitle mb-2 text-muted">Data Science Developer</h6>
+                    <p class="card-text">Hi there !!</p>
+                    <p class="card-text">I am very glad to welcome you. this is a sample work
+                        and also my college project (<a href="https://galgotiacollege.edu/welcome-to-gcet">Galgotias College of Engineering</a>).
+                        <p class="card-text">For Freelancing or regarding any query just <a
+                                href="mailto: gangwar7540@gmail.com">mail me</a></p>
+                    </p>
+                    <p class="card-text">Let' catch up at Instagram</p>
+                    <a href="https://instagram.com/dev_vipin.py" class="card-link text-success">Vipin Gangwar</a>
+                    <p class="card-text">Let' catch up at GIt Hub</p>
+                    <a href="https://github.com/devVipin1" class="card-link text-success">Vipin Kumar</a>
+            </div>
+        </div>
+        <p>Contect us :- 8279504496 </p>
+        
+    </div>
+    
+    <div style = "background-color:#1d9fc7; clear:both">
+        <center>
+           Copyright © 2021 AttendanceManagement.com
+        </center>
+     </div>
+
+
+    <script>
+        let ham = document.querySelector('.ham');
+        ham.addEventListener('click', () => {
+            let menu = document.querySelector('.nav__list');
+            menu.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

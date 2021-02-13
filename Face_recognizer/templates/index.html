@@ -1,0 +1,28 @@
+
+<div style = "background-color:#5e45eb;text-align:center; clear:both">
+
+    <a href="/export"><button>Download Table</button></a>
+    <a href="/admin"><button>Admin</button></a>
+    <a href="/daywise"><button>Day Wise</button></a>
+
+
+</div> 
+<div style = "background-color:rgb(204, 234, 248);text-align:center; clear:both">
+    <table style="border: 1px solid rgb(156, 3, 3); background-color:rgb(230, 250, 191);text-align: center; margin-left: auto;margin-right: auto;">
+        <thead>
+            <th>Name</th>
+            <th>Date_Time</th>
+        </thead>
+        <tbody>
+            {% for d in data %}
+    
+            <tr>
+                <td>{{ d.Student }}</td>
+                <td>{{ d.Date_Time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>    
+
+ 

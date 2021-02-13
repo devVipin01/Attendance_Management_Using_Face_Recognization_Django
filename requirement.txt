@@ -1,0 +1,23 @@
+Django==3.0
+opencv-python==4.2.0.34
+opencv-contrib python
+haarcascade_frontalface_default.xml
+LBPHFaceRecognizer
+numpy==1.18.2
+pandas
+CSV
+OS
+dateTime
+imutils==0.5.3
+importlib-metadata==1.7.0
+scikit-learn==0.21.3
+scipy==1.4.1
+sqlparse==0.3.1
+urllib3==1.25.10
+
+
+Tips:
+1 :-whenever you see my system location in the code
+change it with your system location
+2 :-you should create a django virtual envirement and 
+install requirments, if needed
